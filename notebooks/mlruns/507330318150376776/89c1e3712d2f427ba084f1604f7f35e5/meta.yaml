@@ -1,0 +1,15 @@
+artifact_uri: file:///home/reby/Desktop/personal_Projects/car_price_prediction/notebooks/mlruns/507330318150376776/89c1e3712d2f427ba084f1604f7f35e5/artifacts
+end_time: 1719420691407
+entry_point_name: ''
+experiment_id: '507330318150376776'
+lifecycle_stage: active
+run_id: 89c1e3712d2f427ba084f1604f7f35e5
+run_name: RandomForestRegressor
+run_uuid: 89c1e3712d2f427ba084f1604f7f35e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719420688906
+status: 3
+tags: []
+user_id: reby

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/reby/Desktop/personal_Projects/car_price_prediction/notebooks/mlruns/507330318150376776/df460cde8e784bbabeec20f98704db2d/artifacts
+end_time: 1719420694898
+entry_point_name: ''
+experiment_id: '507330318150376776'
+lifecycle_stage: active
+run_id: df460cde8e784bbabeec20f98704db2d
+run_name: CatBoostRegressor
+run_uuid: df460cde8e784bbabeec20f98704db2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719420691410
+status: 3
+tags: []
+user_id: reby

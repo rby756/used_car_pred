@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1719421281178
+current_stage: None
+description: ''
+last_updated_timestamp: 1719421281178
+name: rf_car_price
+run_id: 89c1e3712d2f427ba084f1604f7f35e5
+run_link: ''
+source: file:///home/reby/Desktop/personal_Projects/car_price_prediction/notebooks/mlruns/507330318150376776/89c1e3712d2f427ba084f1604f7f35e5/artifacts/RandomForestRegressor
+status: READY
+status_message: null
+storage_location: file:///home/reby/Desktop/personal_Projects/car_price_prediction/notebooks/mlruns/507330318150376776/89c1e3712d2f427ba084f1604f7f35e5/artifacts/RandomForestRegressor
+user_id: null
+version: 1
