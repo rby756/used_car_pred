@@ -1,1 +1,19 @@
-key : value
+COLUMNS:
+  car_name            :   object
+  registration_year   :   int64
+  insurance_validity  :  object
+  fuel_type           :  object
+  ownsership          :   object
+  transmission        :  object
+  manufacturing_year  :   int64
+  seats               : float64
+  kms_driven          : float64
+  mileage(kmpl)       :  float64
+  engine(cc)          :  float64
+  torque(Nm)          : float64
+  price(in lakhs)     : float64
+  short_carname       : object
+
+
+TARGET_COLUMN:
+  price(in lakhs)     : float64
