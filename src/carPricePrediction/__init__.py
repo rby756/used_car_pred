@@ -19,4 +19,6 @@ logging.basicConfig(
     ]
 )
 
-logger = logging.getLogger("mlProjectLogger")
+logger = logging.getLogger("car_price_prediction_logger")
+
+
