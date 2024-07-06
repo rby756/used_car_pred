@@ -16,4 +16,4 @@ COLUMNS:
 
 
 TARGET_COLUMN:
-  price(in lakhs)     : float64
+  name                : price(in lakhs)     

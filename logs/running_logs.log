@@ -181,3 +181,406 @@ x==========x]
 [2024-06-28 17:09:49,352: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2024-07-02 10:40:32,915: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-02 10:40:33,096: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-02 10:40:33,143: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-02 10:40:33,145: INFO: common: created directory at: artifacts]
+[2024-07-02 10:40:33,146: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-02 10:41:19,287: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-02 10:41:19,290: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-02 10:41:19,295: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-02 10:41:19,297: INFO: common: created directory at: artifacts]
+[2024-07-02 10:41:19,298: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-02 10:46:37,286: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-02 10:46:37,289: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-02 10:46:37,293: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-02 10:46:37,295: INFO: common: created directory at: artifacts]
+[2024-07-02 10:46:37,300: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-02 11:00:19,946: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-02 11:00:19,948: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-02 11:00:19,953: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-02 11:00:19,955: INFO: common: created directory at: artifacts]
+[2024-07-02 11:00:19,956: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-02 11:02:56,549: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-02 11:02:56,553: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-02 11:02:56,557: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-02 11:02:56,558: INFO: common: created directory at: artifacts]
+[2024-07-02 11:02:56,560: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-02 11:03:46,074: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-02 11:03:46,082: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-02 11:03:46,099: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-02 11:03:46,104: INFO: common: created directory at: artifacts]
+[2024-07-02 11:03:46,108: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-02 11:03:46,122: ERROR: 1421303987: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_8755/1421303987.py", line 196, in train_test_splitting
+    X, y = self.preprocess_data(data)
+AttributeError: 'DataTransformation' object has no attribute 'preprocess_data'. Did you mean: 'preprocessor'?
+[2024-07-02 11:04:10,293: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-02 11:04:10,296: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-02 11:04:10,302: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-02 11:04:10,304: INFO: common: created directory at: artifacts]
+[2024-07-02 11:04:10,307: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-02 11:04:10,594: ERROR: 3398564310: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_8755/3398564310.py", line 196, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_8755/3398564310.py", line 168, in preprocess_data
+    data = self._handle_missing_values(data)
+  File "/tmp/ipykernel_8755/3398564310.py", line 44, in _handle_missing_values
+    data = data.dropna(subset=[self.config.target_column])
+AttributeError: 'NoneType' object has no attribute 'dropna'
+[2024-07-02 11:23:55,057: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-02 11:23:55,061: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-02 11:23:55,066: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-02 11:23:55,067: INFO: common: created directory at: artifacts]
+[2024-07-02 11:23:55,068: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-02 11:23:55,076: ERROR: 2010096920: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_8755/2010096920.py", line 197, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_8755/2010096920.py", line 169, in preprocess_data
+    data = self._handle_missing_values(data)
+  File "/tmp/ipykernel_8755/2010096920.py", line 45, in _handle_missing_values
+    data = data.dropna(subset=[self.config.target_column])
+AttributeError: 'NoneType' object has no attribute 'dropna'
+[2024-07-06 23:23:05,872: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:23:06,057: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:23:06,106: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:23:06,108: INFO: common: created directory at: artifacts]
+[2024-07-06 23:23:06,111: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:23:06,250: ERROR: 2010096920: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/2010096920.py", line 197, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_7478/2010096920.py", line 169, in preprocess_data
+    data = self._handle_missing_values(data)
+  File "/tmp/ipykernel_7478/2010096920.py", line 45, in _handle_missing_values
+    data = data.dropna(subset=[self.config.target_column])
+AttributeError: 'NoneType' object has no attribute 'dropna'
+[2024-07-06 23:25:24,804: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:25:24,807: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:25:24,815: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:25:24,817: INFO: common: created directory at: artifacts]
+[2024-07-06 23:25:24,819: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:25:24,832: ERROR: 2408568821: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/2408568821.py", line 198, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_7478/2408568821.py", line 169, in preprocess_data
+    data = self._handle_missing_values(data)
+  File "/tmp/ipykernel_7478/2408568821.py", line 45, in _handle_missing_values
+    data = data.dropna(subset=[self.config.target_column])
+AttributeError: 'NoneType' object has no attribute 'dropna'
+[2024-07-06 23:28:00,152: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:28:00,154: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:28:00,162: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:28:00,163: INFO: common: created directory at: artifacts]
+[2024-07-06 23:28:00,164: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:28:00,176: ERROR: 98330458: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/98330458.py", line 199, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_7478/98330458.py", line 169, in preprocess_data
+    print("CHECK DATAFRAME ",data.columns)
+AttributeError: 'NoneType' object has no attribute 'columns'
+[2024-07-06 23:30:08,541: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:30:08,544: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:30:08,549: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:30:08,551: INFO: common: created directory at: artifacts]
+[2024-07-06 23:30:08,554: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:30:08,567: ERROR: 471311298: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/471311298.py", line 200, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_7478/471311298.py", line 171, in preprocess_data
+    data = self._drop_irrelevant_columns(data)
+  File "/tmp/ipykernel_7478/471311298.py", line 32, in _drop_irrelevant_columns
+    print(data.head())
+AttributeError: 'NoneType' object has no attribute 'head'
+[2024-07-06 23:32:04,449: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:32:04,453: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:32:04,458: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:32:04,459: INFO: common: created directory at: artifacts]
+[2024-07-06 23:32:04,460: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:32:04,561: ERROR: 763822088: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/763822088.py", line 202, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_7478/763822088.py", line 174, in preprocess_data
+    data = self._handle_missing_values(data)
+  File "/tmp/ipykernel_7478/763822088.py", line 50, in _handle_missing_values
+    data = data.dropna(subset=[self.config.target_column])
+AttributeError: 'NoneType' object has no attribute 'dropna'
+[2024-07-06 23:34:05,320: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:34:05,323: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:34:05,327: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:34:05,328: INFO: common: created directory at: artifacts]
+[2024-07-06 23:34:05,330: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:34:05,341: ERROR: 2766369880: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/2766369880.py", line 202, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_7478/2766369880.py", line 174, in preprocess_data
+    data = self._handle_missing_values(data)
+  File "/tmp/ipykernel_7478/2766369880.py", line 50, in _handle_missing_values
+    data = data.dropna(subset=[self.config.target_column])
+AttributeError: 'NoneType' object has no attribute 'dropna'
+[2024-07-06 23:35:26,671: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:35:26,673: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:35:26,678: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:35:26,679: INFO: common: created directory at: artifacts]
+[2024-07-06 23:35:26,682: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:35:26,711: ERROR: 341168565: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/341168565.py", line 203, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_7478/341168565.py", line 177, in preprocess_data
+    X = self._apply_target_encoding(X, y if fit else None, fit=fit)
+TypeError: DataTransformation._apply_target_encoding() got an unexpected keyword argument 'fit'
+[2024-07-06 23:36:39,566: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:36:39,568: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:36:39,572: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:36:39,574: INFO: common: created directory at: artifacts]
+[2024-07-06 23:36:39,575: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:36:39,587: ERROR: 3939069024: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/3939069024.py", line 202, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_7478/3939069024.py", line 176, in preprocess_data
+    X = self._apply_target_encoding(X, y if fit else None, fit=fit)
+TypeError: DataTransformation._apply_target_encoding() got an unexpected keyword argument 'fit'
+[2024-07-06 23:40:49,192: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:40:49,195: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:40:49,199: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:40:49,202: INFO: common: created directory at: artifacts]
+[2024-07-06 23:40:49,205: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:40:50,899: ERROR: 4284149673: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/4284149673.py", line 206, in train_test_splitting
+    X_train = X_train.reset_index(drop=True)
+AttributeError: 'numpy.ndarray' object has no attribute 'reset_index'
+[2024-07-06 23:43:05,349: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:43:05,353: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:43:05,357: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:43:05,359: INFO: common: created directory at: artifacts]
+[2024-07-06 23:43:05,360: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:43:06,281: ERROR: 4113180182: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/4113180182.py", line 206, in train_test_splitting
+    X_train = X_train.to_frame().reset_index(drop=True)
+AttributeError: 'numpy.ndarray' object has no attribute 'to_frame'
+[2024-07-06 23:47:25,731: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:47:25,735: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:47:25,744: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:47:25,746: INFO: common: created directory at: artifacts]
+[2024-07-06 23:47:25,748: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:47:25,946: ERROR: 1660335642: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/1660335642.py", line 208, in train_test_splitting
+    X_train = X_train.to_frame().reset_index(drop=True)
+AttributeError: 'numpy.ndarray' object has no attribute 'to_frame'
+[2024-07-06 23:51:55,238: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:51:55,242: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:51:55,246: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:51:55,247: INFO: common: created directory at: artifacts]
+[2024-07-06 23:51:55,250: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:51:55,316: ERROR: 3325183824: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/3325183824.py", line 210, in train_test_splitting
+    X_train = X_train.to_frame().reset_index(drop=True)
+AttributeError: 'numpy.ndarray' object has no attribute 'to_frame'
+[2024-07-06 23:53:08,994: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-06 23:53:08,997: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-06 23:53:09,002: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-06 23:53:09,004: INFO: common: created directory at: artifacts]
+[2024-07-06 23:53:09,006: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-06 23:53:09,173: ERROR: 301219887: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/301219887.py", line 210, in train_test_splitting
+    X_train = X_train.to_frame().reset_index(drop=True)
+AttributeError: 'numpy.ndarray' object has no attribute 'to_frame'
+[2024-07-07 00:03:31,954: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:03:31,957: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:03:31,962: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:03:31,964: INFO: common: created directory at: artifacts]
+[2024-07-07 00:03:31,966: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 00:03:33,506: ERROR: 2361764916: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/2361764916.py", line 216, in train_test_splitting
+    train_processed = pd.concat([X_train, y_train], axis=1)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 382, in concat
+    op = _Concatenator(
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'numpy.ndarray'>'; only Series and DataFrame objs are valid
+[2024-07-07 00:05:16,344: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:05:16,348: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:05:16,354: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:05:16,355: INFO: common: created directory at: artifacts]
+[2024-07-07 00:05:16,357: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 00:05:17,291: ERROR: 1022419336: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7478/1022419336.py", line 219, in train_test_splitting
+    y_train_df = pd.DataFrame(y_train).to_frame().reset_index(drop=True)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'to_frame'
+[2024-07-07 00:05:32,561: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:05:32,564: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:05:32,569: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:05:32,571: INFO: common: created directory at: artifacts]
+[2024-07-07 00:05:32,572: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 00:05:33,612: INFO: 3323293472: Data split into training and test sets]
+[2024-07-07 00:05:33,613: INFO: 3323293472: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 00:05:33,614: INFO: 3323293472: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 00:29:40,753: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 00:29:40,756: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:29:40,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:29:40,759: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:29:40,759: INFO: common: created directory at: artifacts]
+[2024-07-07 00:29:40,759: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 00:29:40,760: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 00:29:40,788: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 00:29:40,788: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 00:29:40,792: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:29:40,793: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:29:40,798: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:29:40,798: INFO: common: created directory at: artifacts]
+[2024-07-07 00:29:40,798: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 00:29:40,809: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 00:29:40,809: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 00:29:40,809: ERROR: main: name 'DataTransformationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 36, in <module>
+    obj = DataTransformationTrainingPipeline()
+NameError: name 'DataTransformationTrainingPipeline' is not defined
+[2024-07-07 00:42:47,190: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 00:42:47,192: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:42:47,193: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:42:47,195: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:42:47,196: INFO: common: created directory at: artifacts]
+[2024-07-07 00:42:47,196: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 00:42:47,197: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 00:42:47,199: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 00:42:47,199: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 00:42:47,201: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:42:47,202: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:42:47,204: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:42:47,205: INFO: common: created directory at: artifacts]
+[2024-07-07 00:42:47,205: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 00:42:47,215: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 00:42:47,215: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 00:42:47,219: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:42:47,219: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:42:47,223: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:42:47,224: INFO: common: created directory at: artifacts]
+[2024-07-07 00:42:47,224: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 00:42:47,247: ERROR: main: name 'logger' is not defined]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 217, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 195, in preprocess_data
+    self._save_transformer(transformer)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 203, in _save_transformer
+    joblib.dump(transformer, os.path.join(self.config.root_dir, self.config.preprocessor_name))
+NameError: name 'os' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 38, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/data_transformation_training.py", line 19, in main
+    data_transformation.train_test_splitting()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 248, in train_test_splitting
+    logger.error("An error occurred during train-test splitting", exc_info=True)
+NameError: name 'logger' is not defined
+[2024-07-07 00:43:38,088: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 00:43:38,090: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:43:38,091: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:43:38,094: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:43:38,094: INFO: common: created directory at: artifacts]
+[2024-07-07 00:43:38,095: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 00:43:38,095: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 00:43:38,097: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 00:43:38,097: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 00:43:38,100: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:43:38,101: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:43:38,105: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:43:38,106: INFO: common: created directory at: artifacts]
+[2024-07-07 00:43:38,106: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 00:43:38,491: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 00:43:38,492: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 00:43:38,501: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:43:38,503: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:43:38,506: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:43:38,506: INFO: common: created directory at: artifacts]
+[2024-07-07 00:43:38,507: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 00:43:38,536: ERROR: data_transformation: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 218, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 196, in preprocess_data
+    self._save_transformer(transformer)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 204, in _save_transformer
+    joblib.dump(transformer, os.path.join(self.config.root_dir, self.config.preprocessor_name))
+NameError: name 'os' is not defined
+[2024-07-07 00:43:38,536: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 38, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/data_transformation_training.py", line 19, in main
+    data_transformation.train_test_splitting()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 218, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 196, in preprocess_data
+    self._save_transformer(transformer)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/data_transformation.py", line 204, in _save_transformer
+    joblib.dump(transformer, os.path.join(self.config.root_dir, self.config.preprocessor_name))
+NameError: name 'os' is not defined
+[2024-07-07 00:43:56,425: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 00:43:56,428: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:43:56,429: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:43:56,431: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:43:56,432: INFO: common: created directory at: artifacts]
+[2024-07-07 00:43:56,432: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 00:43:56,432: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 00:43:56,435: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 00:43:56,435: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 00:43:56,437: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:43:56,438: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:43:56,442: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:43:56,442: INFO: common: created directory at: artifacts]
+[2024-07-07 00:43:56,442: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 00:43:56,453: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 00:43:56,454: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 00:43:56,457: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 00:43:56,457: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 00:43:56,461: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 00:43:56,461: INFO: common: created directory at: artifacts]
+[2024-07-07 00:43:56,462: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 00:43:57,786: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 00:43:57,787: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 00:43:57,787: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 00:43:57,787: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
