@@ -1,0 +1,15 @@
+artifact_uri: file:///home/reby/Desktop/personal_Projects/car_price_prediction/notebooks/mlruns/507330318150376776/315fe5a0ec8e4d33b1bd0949164d5fec/artifacts
+end_time: 1720356162979
+entry_point_name: ''
+experiment_id: '507330318150376776'
+lifecycle_stage: active
+run_id: 315fe5a0ec8e4d33b1bd0949164d5fec
+run_name: SGDRegressor
+run_uuid: 315fe5a0ec8e4d33b1bd0949164d5fec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720356162948
+status: 4
+tags: []
+user_id: reby

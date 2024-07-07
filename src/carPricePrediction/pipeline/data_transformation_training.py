@@ -1,8 +1,6 @@
 from src.carPricePrediction.config.configuration import ConfigurationManager
 from src.carPricePrediction.components.data_transformation import DataTransformation
 from src.carPricePrediction import logger
-from pathlib import Path
-from src.carPricePrediction.entity.config_entity import DataTransformationConfig
 
 STAGE_NAME = "Data Transformation stage"
 

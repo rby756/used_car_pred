@@ -1,0 +1,20 @@
+artifact_path: XGBRegressor
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.0
+mlflow_version: 2.14.2
+model_size_bytes: 378462
+model_uuid: e03a4cd1936d46bb93009e9da9f979b5
+run_id: bfb472b9512a4eb09a9e019e1d32152a
+utc_time_created: '2024-07-07 08:47:23.993633'

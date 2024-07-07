@@ -1,0 +1,15 @@
+artifact_uri: file:///home/reby/Desktop/personal_Projects/car_price_prediction/notebooks/mlruns/507330318150376776/046329899d0b4b12b28687846e8d953d/artifacts
+end_time: 1720342029290
+entry_point_name: ''
+experiment_id: '507330318150376776'
+lifecycle_stage: active
+run_id: 046329899d0b4b12b28687846e8d953d
+run_name: AdaBoostRegressor
+run_uuid: 046329899d0b4b12b28687846e8d953d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720342028061
+status: 3
+tags: []
+user_id: reby

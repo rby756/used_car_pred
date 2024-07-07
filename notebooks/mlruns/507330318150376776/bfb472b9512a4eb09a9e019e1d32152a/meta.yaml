@@ -1,0 +1,15 @@
+artifact_uri: file:///home/reby/Desktop/personal_Projects/car_price_prediction/notebooks/mlruns/507330318150376776/bfb472b9512a4eb09a9e019e1d32152a/artifacts
+end_time: 1720342045189
+entry_point_name: ''
+experiment_id: '507330318150376776'
+lifecycle_stage: active
+run_id: bfb472b9512a4eb09a9e019e1d32152a
+run_name: XGBRegressor
+run_uuid: bfb472b9512a4eb09a9e019e1d32152a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720342043790
+status: 3
+tags: []
+user_id: reby

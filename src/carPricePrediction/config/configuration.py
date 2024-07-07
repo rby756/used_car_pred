@@ -1,6 +1,6 @@
 from src.carPricePrediction.constants import *
 from src.carPricePrediction.utils.common import read_yaml, create_directories
-from src.carPricePrediction.entity.config_entity import (DataIngestionConfig,DataValidationConfig,DataTransformationConfig)
+from src.carPricePrediction.entity.config_entity import (DataIngestionConfig,DataValidationConfig,DataTransformationConfig, ModelTrainerConfig)
 
 
 class ConfigurationManager:
@@ -60,5 +60,23 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params.RandomForestRegressor
+        schema =  self.schema.TARGET_COLUMN
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            train_data_path=config.train_data_path,
+            test_data_path=config.test_data_path,
+            model_name=config.model_name,
+            n_estimators=params.n_estimators,
+            target_column=schema.name
+        )
+
+        return model_trainer_config
 
 

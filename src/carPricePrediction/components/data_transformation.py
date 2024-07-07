@@ -237,8 +237,8 @@ class DataTransformation:
             y_train_df = pd.DataFrame(y_train).reset_index(drop=True)
             y_test_df = pd.DataFrame(y_test).reset_index(drop=True)
 
-            train_processed = pd.concat([X_train, y_train], axis=1)
-            test_processed = pd.concat([X_test, y_test], axis=1)
+            train_processed = pd.concat([X_train, y_train_df], axis=1)
+            test_processed = pd.concat([X_test, y_test_df], axis=1)
 
             train_processed.to_csv(os.path.join(self.config.root_dir, "train.csv"), index=False)
             test_processed.to_csv(os.path.join(self.config.root_dir, "test.csv"), index=False)

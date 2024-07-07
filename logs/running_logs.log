@@ -584,3 +584,774 @@ x==========x]
 [2024-07-07 00:43:57,787: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x]
+[2024-07-07 14:31:57,824: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 14:31:57,981: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 14:31:58,039: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 14:31:58,041: INFO: common: created directory at: artifacts]
+[2024-07-07 14:32:34,479: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 14:32:34,482: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 14:32:34,486: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 14:32:34,488: INFO: common: created directory at: artifacts]
+[2024-07-07 14:32:34,489: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-07 14:34:38,952: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 14:34:38,955: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 14:34:38,960: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 14:34:38,962: INFO: common: created directory at: artifacts]
+[2024-07-07 14:34:38,964: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-07 15:26:55,456: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 15:26:55,458: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 15:26:55,463: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 15:26:55,465: INFO: common: created directory at: artifacts]
+[2024-07-07 15:26:55,467: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 15:26:55,525: ERROR: 3390105472: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'ownership'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_indexing.py", line 361, in _get_column_indices
+    col_idx = all_columns.get_loc(col)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'ownership'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ipykernel_13059/3390105472.py", line 150, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_13059/3390105472.py", line 138, in preprocess_data
+    X_transformed = transformer.fit_transform(X)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 968, in fit_transform
+    self._validate_column_callables(X)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 536, in _validate_column_callables
+    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_indexing.py", line 369, in _get_column_indices
+    raise ValueError("A given column is not a column of the dataframe") from e
+ValueError: A given column is not a column of the dataframe
+[2024-07-07 15:28:29,811: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 15:28:29,817: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 15:28:29,826: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 15:28:29,829: INFO: common: created directory at: artifacts]
+[2024-07-07 15:28:29,832: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 15:28:29,852: ERROR: 712126383: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'owsership'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_indexing.py", line 361, in _get_column_indices
+    col_idx = all_columns.get_loc(col)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'owsership'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ipykernel_13059/712126383.py", line 150, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_13059/712126383.py", line 138, in preprocess_data
+    X_transformed = transformer.fit_transform(X)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 968, in fit_transform
+    self._validate_column_callables(X)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 536, in _validate_column_callables
+    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_indexing.py", line 369, in _get_column_indices
+    raise ValueError("A given column is not a column of the dataframe") from e
+ValueError: A given column is not a column of the dataframe
+[2024-07-07 15:29:02,900: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 15:29:02,904: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 15:29:02,912: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 15:29:02,913: INFO: common: created directory at: artifacts]
+[2024-07-07 15:29:02,915: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 15:29:02,935: ERROR: 712126383: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'owsership'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_indexing.py", line 361, in _get_column_indices
+    col_idx = all_columns.get_loc(col)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'owsership'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ipykernel_13059/712126383.py", line 150, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_13059/712126383.py", line 138, in preprocess_data
+    X_transformed = transformer.fit_transform(X)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 968, in fit_transform
+    self._validate_column_callables(X)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 536, in _validate_column_callables
+    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_indexing.py", line 369, in _get_column_indices
+    raise ValueError("A given column is not a column of the dataframe") from e
+ValueError: A given column is not a column of the dataframe
+[2024-07-07 15:29:50,827: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 15:29:50,830: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 15:29:50,835: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 15:29:50,837: INFO: common: created directory at: artifacts]
+[2024-07-07 15:29:50,840: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 15:29:52,995: ERROR: 1131935452: An error occurred during train-test splitting]
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 136, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/pipeline.py", line 1310, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/pipeline.py", line 532, in fit_transform
+    routed_params = self._check_method_params(method="fit_transform", props=params)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/pipeline.py", line 358, in _check_method_params
+    **{
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/pipeline.py", line 360, in <dictcomp>
+    for name, step in self.steps
+ValueError: too many values to unpack (expected 2)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ipykernel_13059/1131935452.py", line 150, in train_test_splitting
+    X, y = self.preprocess_data(data)
+  File "/tmp/ipykernel_13059/1131935452.py", line 138, in preprocess_data
+    X_transformed = transformer.fit_transform(X)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 976, in fit_transform
+    result = self._call_func_on_transformers(
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 885, in _call_func_on_transformers
+    return Parallel(n_jobs=self.n_jobs)(jobs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/parallel.py", line 2007, in __call__
+    return output if self.return_generator else list(output)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/parallel.py", line 1650, in _get_outputs
+    yield from self._retrieve()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/parallel.py", line 1754, in _retrieve
+    self._raise_error_fast()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/parallel.py", line 1789, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/parallel.py", line 745, in get_result
+    return self._return_or_raise()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/joblib/parallel.py", line 763, in _return_or_raise
+    raise self._result
+ValueError: too many values to unpack (expected 2)
+[2024-07-07 19:25:36,546: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:25:36,549: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:25:36,554: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:25:36,557: INFO: common: created directory at: artifacts]
+[2024-07-07 19:25:36,560: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:25:36,575: ERROR: 4243739788: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_13059/4243739788.py", line 202, in train_test_splitting
+    X, y = self.preprocess_data(data)
+TypeError: DataTransformation.preprocess_data() missing 1 required positional argument: 'y'
+[2024-07-07 19:26:01,523: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:26:01,527: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:26:01,531: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:26:01,533: INFO: common: created directory at: artifacts]
+[2024-07-07 19:26:01,534: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:26:01,592: ERROR: 4082560514: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_13059/4082560514.py", line 214, in train_test_splitting
+    X_train,y_train = self.preprocess_data(X_train,y_train)
+  File "/tmp/ipykernel_13059/4082560514.py", line 178, in preprocess_data
+    X_transformed = transformer.transform(X)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/compose/_column_transformer.py", line 1035, in transform
+    check_is_fitted(self)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1661, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+[2024-07-07 19:27:20,326: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:27:20,329: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:27:20,334: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:27:20,336: INFO: common: created directory at: artifacts]
+[2024-07-07 19:27:20,340: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:27:26,739: ERROR: 2769446730: An error occurred during train-test splitting]
+Traceback (most recent call last):
+  File "/tmp/ipykernel_13059/2769446730.py", line 230, in train_test_splitting
+    y_train_df = pd.DataFrame(y_train).to_frame().reset_index(drop=True)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/pandas/core/generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'to_frame'
+[2024-07-07 19:27:43,427: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:27:43,431: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:27:43,435: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:27:43,436: INFO: common: created directory at: artifacts]
+[2024-07-07 19:27:43,437: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:27:44,790: INFO: 2513608790: Data split into training and test sets]
+[2024-07-07 19:27:44,791: INFO: 2513608790: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 19:27:44,792: INFO: 2513608790: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 19:32:28,800: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:32:28,803: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:32:28,807: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:32:28,809: INFO: common: created directory at: artifacts]
+[2024-07-07 19:32:28,810: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:32:29,350: INFO: 262633336: Data split into training and test sets]
+[2024-07-07 19:32:29,351: INFO: 262633336: Shape of preprocessed training data: (1028, 15)]
+[2024-07-07 19:32:29,352: INFO: 262633336: Shape of preprocessed test data: (480, 15)]
+[2024-07-07 19:34:38,372: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:34:38,375: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:34:38,381: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:34:38,384: INFO: common: created directory at: artifacts]
+[2024-07-07 19:34:38,387: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:34:38,555: INFO: 3257775251: Data split into training and test sets]
+[2024-07-07 19:34:38,556: INFO: 3257775251: Shape of preprocessed training data: (1028, 15)]
+[2024-07-07 19:34:38,557: INFO: 3257775251: Shape of preprocessed test data: (480, 15)]
+[2024-07-07 19:35:14,253: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:35:14,255: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:35:14,260: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:35:14,261: INFO: common: created directory at: artifacts]
+[2024-07-07 19:35:14,263: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:35:15,635: INFO: 1230018745: Data split into training and test sets]
+[2024-07-07 19:35:15,636: INFO: 1230018745: Shape of preprocessed training data: (1028, 15)]
+[2024-07-07 19:35:15,637: INFO: 1230018745: Shape of preprocessed test data: (480, 15)]
+[2024-07-07 19:36:08,189: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:36:08,192: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:36:08,198: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:36:08,200: INFO: common: created directory at: artifacts]
+[2024-07-07 19:36:08,201: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:36:08,532: INFO: 71699463: Data split into training and test sets]
+[2024-07-07 19:36:08,532: INFO: 71699463: Shape of preprocessed training data: (1028, 15)]
+[2024-07-07 19:36:08,533: INFO: 71699463: Shape of preprocessed test data: (480, 15)]
+[2024-07-07 19:36:38,149: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:36:38,152: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:36:38,157: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:36:38,158: INFO: common: created directory at: artifacts]
+[2024-07-07 19:36:38,159: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:36:38,375: INFO: 730129918: Data split into training and test sets]
+[2024-07-07 19:36:38,389: INFO: 730129918: Shape of preprocessed training data: (1028, 15)]
+[2024-07-07 19:36:38,391: INFO: 730129918: Shape of preprocessed test data: (480, 15)]
+[2024-07-07 19:37:57,204: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:37:57,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:37:57,212: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:37:57,214: INFO: common: created directory at: artifacts]
+[2024-07-07 19:37:57,217: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:37:57,620: INFO: 365662214: Data split into training and test sets]
+[2024-07-07 19:37:57,621: INFO: 365662214: Shape of preprocessed training data: (1028, 15)]
+[2024-07-07 19:37:57,622: INFO: 365662214: Shape of preprocessed test data: (480, 15)]
+[2024-07-07 19:41:22,496: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:41:22,502: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:41:22,516: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:41:22,521: INFO: common: created directory at: artifacts]
+[2024-07-07 19:41:22,527: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 19:41:22,656: INFO: 2589047956: Data split into training and test sets]
+[2024-07-07 19:41:22,656: INFO: 2589047956: Shape of preprocessed training data: (813, 16)]
+[2024-07-07 19:41:22,657: INFO: 2589047956: Shape of preprocessed test data: (272, 16)]
+[2024-07-07 19:42:09,023: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 19:42:09,025: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 19:42:09,029: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 19:42:09,031: INFO: common: created directory at: artifacts]
+[2024-07-07 19:42:09,032: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-07 20:08:56,116: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:08:56,119: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:08:56,120: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:08:56,122: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:08:56,122: INFO: common: created directory at: artifacts]
+[2024-07-07 20:08:56,123: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:08:56,123: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:08:56,178: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:08:56,178: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:08:56,182: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:08:56,183: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:08:56,186: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:08:56,186: INFO: common: created directory at: artifacts]
+[2024-07-07 20:08:56,186: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:08:56,216: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:08:56,216: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:08:56,219: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:08:56,220: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:08:56,223: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:08:56,223: INFO: common: created directory at: artifacts]
+[2024-07-07 20:08:56,224: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:08:57,606: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:08:57,606: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 20:08:57,606: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 20:08:57,607: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:08:57,607: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:08:57,611: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:08:57,612: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:08:57,615: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:08:57,616: INFO: common: created directory at: artifacts]
+[2024-07-07 20:08:57,616: ERROR: main: name 'DataValidation' is not defined]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 16, in main
+    model_trainer = DataValidation(config=model_trainer_config)
+NameError: name 'DataValidation' is not defined
+[2024-07-07 20:09:53,272: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:09:53,276: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:09:53,276: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:09:53,279: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:09:53,279: INFO: common: created directory at: artifacts]
+[2024-07-07 20:09:53,279: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:09:53,279: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:09:53,281: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:09:53,281: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:09:53,286: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:09:53,287: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:09:53,290: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:09:53,290: INFO: common: created directory at: artifacts]
+[2024-07-07 20:09:53,291: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:09:53,301: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:09:53,301: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:09:53,307: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:09:53,308: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:09:53,310: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:09:53,311: INFO: common: created directory at: artifacts]
+[2024-07-07 20:09:53,311: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:09:54,716: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:09:54,716: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 20:09:54,717: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 20:09:54,717: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:09:54,717: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:09:54,721: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:09:54,721: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:09:54,724: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:09:54,725: INFO: common: created directory at: artifacts]
+[2024-07-07 20:09:54,725: ERROR: main: 'ModelTrainer' object has no attribute 'train_test_splitting']
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 17, in main
+    model_trainer.train_test_splitting()
+AttributeError: 'ModelTrainer' object has no attribute 'train_test_splitting'
+[2024-07-07 20:10:27,058: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:10:27,061: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:10:27,062: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:10:27,064: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:10:27,064: INFO: common: created directory at: artifacts]
+[2024-07-07 20:10:27,064: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:10:27,065: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:10:27,067: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:10:27,067: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:10:27,069: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:10:27,070: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:10:27,073: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:10:27,074: INFO: common: created directory at: artifacts]
+[2024-07-07 20:10:27,074: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:10:27,083: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:10:27,084: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:10:27,087: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:10:27,088: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:10:27,090: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:10:27,091: INFO: common: created directory at: artifacts]
+[2024-07-07 20:10:27,091: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:10:28,472: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:10:28,472: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 20:10:28,472: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 20:10:28,472: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:10:28,473: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:10:28,476: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:10:28,477: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:10:28,481: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:10:28,481: INFO: common: created directory at: artifacts]
+[2024-07-07 20:10:28,481: ERROR: main: 'function' object has no attribute 'train_data_path']
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 17, in main
+    model_trainer.train()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/model_trainer.py", line 11, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+AttributeError: 'function' object has no attribute 'train_data_path'
+[2024-07-07 20:12:30,801: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:12:30,804: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:12:30,804: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:12:30,807: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:12:30,808: INFO: common: created directory at: artifacts]
+[2024-07-07 20:12:30,808: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:12:30,808: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:12:30,810: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:12:30,810: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:12:30,815: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:12:30,816: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:12:30,821: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:12:30,821: INFO: common: created directory at: artifacts]
+[2024-07-07 20:12:30,821: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:12:30,854: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:12:30,854: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:12:30,858: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:12:30,859: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:12:30,862: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:12:30,862: INFO: common: created directory at: artifacts]
+[2024-07-07 20:12:30,862: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:12:32,274: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:12:32,274: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 20:12:32,274: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 20:12:32,274: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:12:32,274: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:12:32,278: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:12:32,280: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:12:32,283: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:12:32,284: INFO: common: created directory at: artifacts]
+[2024-07-07 20:12:32,284: ERROR: main: 'function' object has no attribute 'train_data_path']
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 17, in main
+    model_trainer.train()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/model_trainer.py", line 11, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+AttributeError: 'function' object has no attribute 'train_data_path'
+[2024-07-07 20:13:52,223: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:13:52,226: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:13:52,227: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:13:52,229: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:13:52,230: INFO: common: created directory at: artifacts]
+[2024-07-07 20:13:52,230: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:13:52,230: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:13:52,232: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:13:52,232: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:13:52,235: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:13:52,236: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:13:52,239: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:13:52,239: INFO: common: created directory at: artifacts]
+[2024-07-07 20:13:52,239: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:13:52,249: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:13:52,250: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:13:52,253: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:13:52,253: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:13:52,256: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:13:52,256: INFO: common: created directory at: artifacts]
+[2024-07-07 20:13:52,256: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:13:53,746: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:13:53,746: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 20:13:53,747: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 20:13:53,747: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:13:53,748: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:13:53,760: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:13:53,762: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:13:53,769: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:13:53,770: INFO: common: created directory at: artifacts]
+[2024-07-07 20:13:53,770: ERROR: main: 'function' object has no attribute 'train_data_path']
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 17, in main
+    model_trainer.train()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/model_trainer.py", line 12, in train
+    print("train data path ",self.config.train_data_path)
+AttributeError: 'function' object has no attribute 'train_data_path'
+[2024-07-07 20:14:18,497: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:14:18,501: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:14:18,501: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:14:18,504: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:14:18,504: INFO: common: created directory at: artifacts]
+[2024-07-07 20:14:18,504: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:14:18,504: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:14:18,507: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:14:18,507: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:14:18,510: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:14:18,511: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:14:18,514: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:14:18,514: INFO: common: created directory at: artifacts]
+[2024-07-07 20:14:18,514: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:14:18,524: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:14:18,524: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:14:18,530: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:14:18,531: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:14:18,534: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:14:18,534: INFO: common: created directory at: artifacts]
+[2024-07-07 20:14:18,534: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:14:19,919: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:14:19,919: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 20:14:19,920: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 20:14:19,920: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:14:19,920: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:14:19,925: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:14:19,926: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:14:19,929: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:14:19,930: INFO: common: created directory at: artifacts]
+[2024-07-07 20:14:19,930: ERROR: main: 'function' object has no attribute 'train_data_path']
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 17, in main
+    model_trainer.train()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/model_trainer.py", line 13, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+AttributeError: 'function' object has no attribute 'train_data_path'
+[2024-07-07 20:15:48,932: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:15:48,935: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:15:48,936: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:15:48,938: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:15:48,939: INFO: common: created directory at: artifacts]
+[2024-07-07 20:15:48,939: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:15:48,939: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:15:48,941: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:15:48,941: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:15:48,944: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:15:48,945: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:15:48,948: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:15:48,948: INFO: common: created directory at: artifacts]
+[2024-07-07 20:15:48,949: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:15:48,959: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:15:48,959: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:15:48,965: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:15:48,966: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:15:48,968: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:15:48,968: INFO: common: created directory at: artifacts]
+[2024-07-07 20:15:48,969: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:15:50,389: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:15:50,389: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 20:15:50,389: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 20:15:50,390: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:15:50,390: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:15:50,396: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:15:50,397: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:15:50,403: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:15:50,403: INFO: common: created directory at: artifacts]
+[2024-07-07 20:15:50,404: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-07 20:15:50,412: ERROR: main: name 'RandomForestRegressor' is not defined]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 17, in main
+    model_trainer.train()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/model_trainer.py", line 22, in train
+    rf_rgrs = RandomForestRegressor(n_estimators=self.config.n_estimators)
+NameError: name 'RandomForestRegressor' is not defined
+[2024-07-07 20:16:34,576: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:16:34,579: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:16:34,580: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:16:34,582: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:16:34,582: INFO: common: created directory at: artifacts]
+[2024-07-07 20:16:34,582: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:16:34,583: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:16:34,585: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:16:34,585: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:16:34,588: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:16:34,589: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:16:34,592: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:16:34,592: INFO: common: created directory at: artifacts]
+[2024-07-07 20:16:34,592: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:16:34,602: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:16:34,603: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:16:34,605: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:16:34,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:16:34,609: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:16:34,609: INFO: common: created directory at: artifacts]
+[2024-07-07 20:16:34,609: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:16:35,972: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:16:35,973: INFO: data_transformation: Shape of preprocessed training data: (1028, 14)]
+[2024-07-07 20:16:35,973: INFO: data_transformation: Shape of preprocessed test data: (480, 14)]
+[2024-07-07 20:16:35,973: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:16:35,973: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:16:35,977: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:16:35,978: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:16:35,981: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:16:35,982: INFO: common: created directory at: artifacts]
+[2024-07-07 20:16:35,982: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-07 20:16:35,996: ERROR: main: Input y contains NaN.]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 17, in main
+    model_trainer.train()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/model_trainer.py", line 24, in train
+    rf_rgrs.fit(train_x, train_y)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/ensemble/_forest.py", line 363, in fit
+    X, y = self._validate_data(
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1318, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1328, in _check_y
+    y = check_array(
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1064, in check_array
+    _assert_all_finite(
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 123, in _assert_all_finite
+    _assert_all_finite_element_wise(
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/venv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 172, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input y contains NaN.
+[2024-07-07 20:17:35,287: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:17:35,290: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:17:35,291: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:17:35,294: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:17:35,294: INFO: common: created directory at: artifacts]
+[2024-07-07 20:17:35,294: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:17:35,295: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:17:35,297: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:17:35,297: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:17:35,300: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:17:35,301: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:17:35,303: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:17:35,304: INFO: common: created directory at: artifacts]
+[2024-07-07 20:17:35,304: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:17:35,316: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:17:35,316: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:17:35,319: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:17:35,320: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:17:35,323: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:17:35,323: INFO: common: created directory at: artifacts]
+[2024-07-07 20:17:35,324: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:17:36,714: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:17:36,714: INFO: data_transformation: Shape of preprocessed training data: (813, 14)]
+[2024-07-07 20:17:36,715: INFO: data_transformation: Shape of preprocessed test data: (272, 14)]
+[2024-07-07 20:17:36,715: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:17:36,715: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:17:36,719: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:17:36,720: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:17:36,725: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:17:36,725: INFO: common: created directory at: artifacts]
+[2024-07-07 20:17:36,725: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-07 20:17:37,087: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/main.py", line 49, in <module>
+    obj.main()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/pipeline/model_trainer_training.py", line 17, in main
+    model_trainer.train()
+  File "/home/reby/Desktop/personal_Projects/car_price_prediction/src/carPricePrediction/components/model_trainer.py", line 26, in train
+    joblib.dump(rf_rgrs, os.path.join(self.config.root_dir, self.config.model_name))
+NameError: name 'os' is not defined
+[2024-07-07 20:17:56,219: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-07 20:17:56,222: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:17:56,223: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:17:56,225: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:17:56,225: INFO: common: created directory at: artifacts]
+[2024-07-07 20:17:56,226: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-07 20:17:56,226: INFO: data_ingestion: File already exists of size: ~ 27 KB]
+[2024-07-07 20:17:56,227: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:17:56,228: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-07 20:17:56,231: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:17:56,232: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:17:56,235: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:17:56,236: INFO: common: created directory at: artifacts]
+[2024-07-07 20:17:56,236: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-07 20:17:56,246: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:17:56,246: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-07 20:17:56,249: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:17:56,250: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:17:56,255: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:17:56,255: INFO: common: created directory at: artifacts]
+[2024-07-07 20:17:56,255: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-07 20:17:57,644: INFO: data_transformation: Data split into training and test sets]
+[2024-07-07 20:17:57,644: INFO: data_transformation: Shape of preprocessed training data: (813, 14)]
+[2024-07-07 20:17:57,644: INFO: data_transformation: Shape of preprocessed test data: (272, 14)]
+[2024-07-07 20:17:57,645: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-07 20:17:57,645: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-07 20:17:57,649: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-07-07 20:17:57,650: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-07 20:17:57,653: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-07 20:17:57,653: INFO: common: created directory at: artifacts]
+[2024-07-07 20:17:57,654: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-07 20:17:58,058: INFO: main: >>>>>> stage model Training stage completed <<<<<<
+
+x==========x]
