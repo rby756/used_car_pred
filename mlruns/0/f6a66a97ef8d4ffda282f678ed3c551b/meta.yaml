@@ -1,0 +1,15 @@
+artifact_uri: file:///home/reby/Desktop/personal_Projects/car_price_prediction/mlruns/0/f6a66a97ef8d4ffda282f678ed3c551b/artifacts
+end_time: 1720532073600
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f6a66a97ef8d4ffda282f678ed3c551b
+run_name: legendary-stoat-294
+run_uuid: f6a66a97ef8d4ffda282f678ed3c551b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720532073576
+status: 4
+tags: []
+user_id: reby

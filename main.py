@@ -3,6 +3,8 @@ from src.carPricePrediction.pipeline.data_ingestion_training import DataIngestio
 from src.carPricePrediction.pipeline.data_validation_training import DataValidationTrainingPipeline
 from src.carPricePrediction.pipeline.data_transformation_training import DataTransformationTrainingPipeline
 from src.carPricePrediction.pipeline.model_trainer_training import ModelTrainingPipeline
+from src.carPricePrediction.pipeline.model_evaluation_training import ModelEvaluationPipeline
+
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -46,6 +48,17 @@ try:
 
    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
    obj = ModelTrainingPipeline()
+   obj.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+   logger.exception(e)
+   raise e
+
+
+STAGE_NAME = "Model Evaluation stage"
+try:
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   obj = ModelEvaluationPipeline()
    obj.main()
    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
