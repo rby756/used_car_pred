@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Car Features Form</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Car Features Form</h2>
+    <form action="/predict" method="post">
+      <div class="form-group">
+        <label for="insuranceValidity">Insurance Validity</label>
+        <select class="form-control" id="insuranceValidity" name="insurance_validity">
+          <option value="Comprehensive">Comprehensive</option>
+          <option value="Third Party">Third Party</option>
+          <option value="Zero Dep">Zero Dep</option>
+          <option value="Not Available">Not Available</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fuelType">Fuel Type</label>
+        <select class="form-control" id="fuelType" name="fuelType">
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="CNG">CNG</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ownership">Ownership</label>
+        <select class="form-control" id="ownership" name="ownership">
+            <option value="First Owner">First Owner</option>
+            <option value="Second Owner">Second Owner</option>
+            <option value="Third Owner">Third Owner</option>
+            <option value="Fourth Owner">Fourth Owner</option>
+            <option value="Fifth Owner">Fifth Owner</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="transmission">Transmission</label>
+        <select class="form-control" id="fuelType" name="fuelType">
+            <option value="Automatic">Automatic</option>
+            <option value="Manual">Manual</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="shortCarname">Short Car Name</label>
+        <select class="form-control" id="shortCarname" name="short_carname">
+          <option value="Mercedes-Benz S-Class">Mercedes-Benz S-Class</option>
+          <option value="Nissan Magnite">Nissan Magnite</option>
+          <option value="BMW X1">BMW X1</option>
+          <option value="Kia Seltos">Kia Seltos</option>
+          <option value="Skoda Superb">Skoda Superb</option>
+          <option value="Honda Jazz">Honda Jazz</option>
+          <option value="Hyundai Grand">Hyundai Grand</option>
+          <option value="Hyundai Creta">Hyundai Creta</option>
+          <option value="Tata Nexon">Tata Nexon</option>
+          <option value="Honda City">Honda City</option>
+          <option value="Renault Duster">Renault Duster</option>
+          <option value="BMW 3">BMW 3</option>
+          <option value="Hyundai Venue">Hyundai Venue</option>
+          <option value="Hyundai i20">Hyundai i20</option>
+          <option value="Ford Ecosport">Ford Ecosport</option>
+          <option value="Jeep Compass">Jeep Compass</option>
+          <option value="MG Gloster">MG Gloster</option>
+          <option value="Maruti Swift">Maruti Swift</option>
+          <option value="Maruti Wagon">Maruti Wagon</option>
+          <option value="Audi A6">Audi A6</option>
+          <option value="Maruti Baleno">Maruti Baleno</option>
+          <option value="Toyota Yaris">Toyota Yaris</option>
+          <option value="Toyota Fortuner">Toyota Fortuner</option>
+          <option value="Jaguar XE">Jaguar XE</option>
+          <option value="Honda Amaze">Honda Amaze</option>
+          <option value="Tata Tiago">Tata Tiago</option>
+          <option value="Volkswagen Beetle">Volkswagen Beetle</option>
+          <option value="Honda CR-V">Honda CR-V</option>
+          <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+          <option value="Mahindra Scorpio">Mahindra Scorpio</option>
+          <option value="BMW 5">BMW 5</option>
+          <option value="Renault KWID">Renault KWID</option>
+          <option value="Mercedes-Benz GL-Class">Mercedes-Benz GL-Class</option>
+          <option value="Hyundai i10">Hyundai i10</option>
+          <option value="Mahindra XUV500">Mahindra XUV500</option>
+          <option value="Toyota Camry">Toyota Camry</option>
+          <option value="Mercedes-Benz CLA">Mercedes-Benz CLA</option>
+          <option value="Toyota Innova">Toyota Innova</option>
+          <option value="MG Hector">MG Hector</option>
+          <option value="Tata Altroz">Tata Altroz</option>
+          <option value="Kia Carens">Kia Carens</option>
+          <option value="Mercedes-Benz GLE">Mercedes-Benz GLE</option>
+          <option value="Hyundai Verna">Hyundai Verna</option>
+          <option value="BMW 2">BMW 2</option>
+          <option value="Mercedes-Benz CLS-Class">Mercedes-Benz CLS-Class</option>
+          <option value="Kia Sonet">Kia Sonet</option>
+          <option value="Mercedes-Benz AMG">Mercedes-Benz AMG</option>
+          <option value="Mahindra XUV700">Mahindra XUV700</option>
+          <option value="Maruti A-Star">Maruti A-Star</option>
+          <option value="Mercedes-Benz GLS">Mercedes-Benz GLS</option>
+          <option value="Volvo XC40">Volvo XC40</option>
+          <option value="Hyundai Alcazar">Hyundai Alcazar</option>
+          <option value="Land Rover">Land Rover</option>
+          <option value="Skoda Rapid">Skoda Rapid</option>
+          <option value="Mercedes-Benz V-Class">Mercedes-Benz V-Class</option>
+          <option value="Maruti Ignis">Maruti Ignis</option>
+          <option value="BMW X3">BMW X3</option>
+          <option value="Honda Brio">Honda Brio</option>
+          <option value="Ford Endeavour">Ford Endeavour</option>
+          <option value="Volkswagen Virtus">Volkswagen Virtus</option>
+          <option value="Mahindra Alturas">Mahindra Alturas</option>
+          <option value="Maruti Ertiga">Maruti Ertiga</option>
+          <option value="Maruti Ciaz">Maruti Ciaz</option>
+          <option value="Kia Carnival">Kia Carnival</option>
+          <option value="Honda WR-V">Honda WR-V</option>
+          <option value="Mercedes-Benz E-Class">Mercedes-Benz E-Class</option>
+          <option value="Volvo S90">Volvo S90</option>
+          <option value="Mahindra Thar">Mahindra Thar</option>
+          <option value="Mercedes-Benz B">Mercedes-Benz B</option>
+          <option value="Audi Q2">Audi Q2</option>
+          <option value="Hyundai Elantra">Hyundai Elantra</option>
+          <option value="Audi A3">Audi A3</option>
+          <option value="Audi Q7">Audi Q7</option>
+          <option value="Isuzu MU-X">Isuzu MU-X</option>
+          <option value="Tata Harrier">Tata Harrier</option>
+          <option value="BMW 7">BMW 7</option>
+          <option value="Mitsubishi Outlander">Mitsubishi Outlander</option>
+          <option value="BMW X5">BMW X5</option>
+          <option value="Volkswagen Polo">Volkswagen Polo</option>
+          <option value="Maruti Vitara">Maruti Vitara</option>
+          <option value="Audi A4">Audi A4</option>
+          <option value="Toyota Corolla">Toyota Corolla</option>
+          <option value="Jaguar XJ">Jaguar XJ</option>
+          <option value="Mercedes-Benz M-Class">Mercedes-Benz M-Class</option>
+          <option value="Hyundai Xcent">Hyundai Xcent</option>
+          <option value="Audi A8">Audi A8</option>
+          <option value="Maruti Alto">Maruti Alto</option>
+          <option value="Audi Q5">Audi Q5</option>
+          <option value="Toyota Glanza">Toyota Glanza</option>
+          <option value="Jeep Wrangler">Jeep Wrangler</option>
+          <option value="Mahindra XUV300">Mahindra XUV300</option>
+          <option value="BMW X7">BMW X7</option>
+          <option value="Mercedes-Benz GLC">Mercedes-Benz GLC</option>
+          <option value="Hyundai Santro">Hyundai Santro</option>
+          <option value="Maruti Brezza">Maruti Brezza</option>
+          <option value="Mercedes-Benz G">Mercedes-Benz G</option>
+          <option value="Porsche Cayenne">Porsche Cayenne</option>
+          <option value="Volkswagen Taigun">Volkswagen Taigun</option>
+          <option value="Renault Captur">Renault Captur</option>
+          <option value="Toyota Etios">Toyota Etios</option>
+          <option value="Maruti SX4">Maruti SX4</option>
+          <option value="Datsun RediGO">Datsun RediGO</option>
+          <option value="Audi Q3">Audi Q3</option>
+          <option value="Mercedes-Benz A">Mercedes-Benz A</option>
+          <option value="Toyota Hyryder">Toyota Hyryder</option>
+          <option value="BMW X6">BMW X6</option>
+          <option value="Mahindra Marazzo">Mahindra Marazzo</option>
+          <option value="Honda Mobilio">Honda Mobilio</option>
+          <option value="Tata Safari">Tata Safari</option>
+          <option value="Mercedes-Benz GLA">Mercedes-Benz GLA</option>
+          <option value="Audi Q8">Audi Q8</option>
+          <option value="Volvo XC60">Volvo XC60</option>
+          <option value="Skoda Octavia">Skoda Octavia</option>
+          <option value="Lexus RX">Lexus RX</option>
+          <option value="Nissan Sunny">Nissan Sunny</option>
+          <option value="Nissan Kicks">Nissan Kicks</option>
+          <option value="BMW 6">BMW 6</option>
+          <option value="Hyundai Tucson">Hyundai Tucson</option>
+          <option value="Maruti XL6">Maruti XL6</option>
+          <option value="Maruti Ritz">Maruti Ritz</option>
+          <option value="BMW M2">BMW M2</option>
+          <option value="Mini 3">Mini 3</option>
+          <option value="Jaguar XF">Jaguar XF</option>
+          <option value="Nissan Micra">Nissan Micra</option>
+          <option value="Jeep Grand">Jeep Grand</option>
+          <option value="Ford Figo">Ford Figo</option>
+          <option value="Hyundai EON">Hyundai EON</option>
+          <option value="BMW X4">BMW X4</option>
+          <option value="Mahindra KUV">Mahindra KUV</option>
+          <option value="Mahindra TUV">Mahindra TUV</option>
+          <option value="Volkswagen Ameo">Volkswagen Ameo</option>
+          <option value="Skoda Kushaq">Skoda Kushaq</option>
+          <option value="Hyundai Accent">Hyundai Accent</option>
+          <option value="Volkswagen Vento">Volkswagen Vento</option>
+          <option value="Mini Cooper">Mini Cooper</option>
+          <option value="Maruti Celerio">Maruti Celerio</option>
+          <option value="Honda BR-V">Honda BR-V</option>
+          <option value="Tata Punch">Tata Punch</option>
+          <option value="Renault Triber">Renault Triber</option>
+          <option value="Renault Scala">Renault Scala</option>
+          <option value="MG Astor">MG Astor</option>
+          <option value="Ford Aspire">Ford Aspire</option>
+          <option value="Maruti S-Presso">Maruti S-Presso</option>
+          <option value="Maruti Zen">Maruti Zen</option>
+          <option value="Volvo S60">Volvo S60</option>
+          <option value="Mahindra NuvoSport">Mahindra NuvoSport</option>
+          <option value="Honda Civic">Honda Civic</option>
+          <option value="Mitsubishi Cedia">Mitsubishi Cedia</option>
+          <option value="Datsun GO">Datsun GO</option>
+          <option value="Toyota Urban">Toyota Urban</option>
+          <option value="Mahindra Bolero">Mahindra Bolero</option>
+          <option value="Jaguar F-Pace">Jaguar F-Pace</option>
+          <option value="Volvo XC">Volvo XC</option>
+          <option value="Tata Tigor">Tata Tigor</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="manufacturingYear">Manufacturing Year</label>
+        <input type="number" class="form-control" id="manufacturingYear" name="manufacturing_year" placeholder="Enter manufacturing year">
+      </div>
+      <div class="form-group">
+        <label for="seats">Seats</label>
+        <input type="number" step="0.1" class="form-control" id="seats" name="seats" placeholder="Enter number of seats">
+      </div>
+      <div class="form-group">
+        <label for="kmsDriven">Kms Driven</label>
+        <input type="number" step="0.1" class="form-control" id="kmsDriven" name="kms_driven" placeholder="Enter kilometers driven">
+      </div>
+      <div class="form-group">
+        <label for="mileageKmpl">Mileage (kmpl)</label>
+        <input type="number" step="0.1" class="form-control" id="mileageKmpl" name="mileage_kmpl" placeholder="Enter mileage in kmpl">
+      </div>
+      <div class="form-group">
+        <label for="engineCc">Engine (cc)</label>
+        <input type="number" step="0.1" class="form-control" id="engineCc" name="engine_cc" placeholder="Enter engine capacity in cc">
+      </div>
+      <div class="form-group">
+        <label for="torqueNm">Torque (Nm)</label>
+        <input type="number" step="0.1" class="form-control" id="torqueNm" name="torque_nm" placeholder="Enter torque in Nm">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Prediction">
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

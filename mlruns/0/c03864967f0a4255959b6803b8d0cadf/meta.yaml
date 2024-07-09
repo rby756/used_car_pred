@@ -1,0 +1,15 @@
+artifact_uri: file:///home/reby/Desktop/personal_Projects/car_price_prediction/mlruns/0/c03864967f0a4255959b6803b8d0cadf/artifacts
+end_time: 1720557705078
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c03864967f0a4255959b6803b8d0cadf
+run_name: delicate-wolf-914
+run_uuid: c03864967f0a4255959b6803b8d0cadf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720557699175
+status: 3
+tags: []
+user_id: reby
